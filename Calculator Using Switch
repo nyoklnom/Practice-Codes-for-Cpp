@@ -1,0 +1,54 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+	int a;
+	int b;
+	int choice;
+	int total;
+	char again;
+	
+    
+	cout<<"<========== Simple Kabobohan ==========>"<<endl;
+	cout<<"1. Addition"<<endl;
+	cout<<"2. Subtract"<<endl;
+	cout<<"3. Multiply"<<endl;
+	cout<<"4. Divide"<<endl;
+	
+	cout<<"Choose your Operator:";
+	cin>>choice;
+	
+	cout<<"Enter the first number:";
+	cin>>a;
+	
+	cout<<"Enter the second number:";
+	cin>>b;
+	
+	
+	switch(choice){
+		case 1:
+			total = a+b;
+			cout<<"Total:"<<total<<endl;
+			
+	 break;
+		case 2:
+			total = a-b;
+			cout<<"Total:"<<total<<endl;
+	 break;
+		case 3:
+			total = a*b;
+			cout<<"Total:"<<total<<endl;
+		break;
+		case 4:
+			total = a/b;
+			cout<<"Total:"<<total<<endl;
+		break;
+		default:
+			cout<<"Just put Numbers Please!"<<endl;
+	}
+	
+    cout<<"Thank you for using Nyoklnom's Calculator"<<endl;
+
+	return 0;
+}
